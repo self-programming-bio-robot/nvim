@@ -15,12 +15,18 @@ set cc=79
 filetype plugin indent on
 syntax on
 set mouse=a
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 filetype plugin on
 set cursorline
+
+let g:airline#extensions#hunks#enabled=0
+let g:airline#extensions#branch#enabled=1
 
 " commands
 command Run execute "w\n!java %"
 
 " key maps
 map <F9> :Run<CR>
+
+" scripts
+lua require('user/plugins')

@@ -7,6 +7,6 @@ return require('packer').startup(function()
   use 'vim-airline/vim-airline'
 
   -- git
-  use 'jreybert/vimagit'
+  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
   use 'tpope/vim-fugitive'
 end)

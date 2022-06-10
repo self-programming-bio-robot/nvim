@@ -26,7 +26,10 @@ let g:airline#extensions#branch#enabled=1
 command Run execute "w\n!java %"
 
 " key maps
-map <F9> :Run<CR>
+nnoremap <F9> :Run<CR>
 
 " scripts
 lua require('user/plugins')
+lua require('user/plugins-config')
+
+nnoremap <C-n> :NvimTreeToggle<CR>

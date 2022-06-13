@@ -18,6 +18,7 @@ set mouse=a
 set clipboard+=unnamedplus
 filetype plugin on
 set cursorline
+colorscheme yang
 
 let g:airline#extensions#hunks#enabled=0
 let g:airline#extensions#branch#enabled=1

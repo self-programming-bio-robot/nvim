@@ -28,9 +28,9 @@ command Run execute "w\n!java %"
 
 " key maps
 nnoremap <F9> :Run<CR>
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <A-g> :Neogit<CR>
 
 " scripts
 lua require('user/plugins')
 lua require('user/plugins-config')
-
-nnoremap <C-n> :NvimTreeToggle<CR>

@@ -17,5 +17,9 @@ return require('packer').startup(function()
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     },
 --    tag = 'nightly' -- optional, updated every week. (see issue #1193)
-}
+  }
+
+-- snippets
+  use 'dcampos/nvim-snippy'
+  use 'honza/vim-snippets'
 end)

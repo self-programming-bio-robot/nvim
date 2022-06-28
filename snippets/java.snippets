@@ -1,0 +1,34 @@
+snippet leet
+	public class ${1:`vim_snippets#Filename("$1", "untitled")`} {
+		public static void main(String[] args) {
+			TestCase[] cases = new TestCase[] {
+				$0
+			};
+
+			for (TestCase c: cases) {
+				System.out.println(c);
+				$4 actual = new Solution().foo();
+				System.out.println("actual " + actual);
+				if (actual != c.expected) return;
+			}
+		}
+	}
+
+	class TestCase {
+		public ${2:String} ${3:arg1};
+		public ${4:int} expected;
+
+		public TestCase($2 $3, $4 expected) {
+			this.$3 = $3;
+			this.expected = expected;
+		}
+
+		public String toString() {
+			StringBuilder sb = new StringBuilder();
+			sb.append("Test case: ");
+			sb.append($3);
+			sb.append("\n");
+			sb.append("expected: ").append(expected);
+			return sb.toString();
+		}
+	}

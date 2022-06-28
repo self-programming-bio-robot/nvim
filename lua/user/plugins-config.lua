@@ -18,5 +18,8 @@ require('snippy').setup({
             ['<leader>x'] = 'cut_text',
         },
     },
-    snippet_dirs = '~/.local/share/nvim/site/pack/packer/start/vim-snippets/snippets',
+    snippet_dirs = {
+        '~/.local/share/nvim/site/pack/packer/start/vim-snippets/snippets',
+        '~/.config/nvim/snippets'
+    },
 })

@@ -61,6 +61,8 @@ set signcolumn=yes
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
 
+require('neogit').setup {}
+
 -- Completion Plugin Setup
 local cmp = require("cmp")
 cmp.setup({

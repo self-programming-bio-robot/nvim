@@ -7,7 +7,14 @@ return require('packer').startup(function()
   use 'vim-airline/vim-airline'
 
   -- git
-  use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
+  use { 
+    'TimUntersberger/neogit',   
+    requires = {
+        "nvim-lua/plenary.nvim",         -- required
+        "nvim-telescope/telescope.nvim", -- optional
+        "sindrets/diffview.nvim",        -- optional
+    },
+  }
   use 'tpope/vim-fugitive'
   
   -- file tree
@@ -45,4 +52,7 @@ return require('packer').startup(function()
   
   -- terminal
   use 'voldikss/vim-floaterm'
+
+  -- copilot
+  -- use {'github/copilot.vim', branch = 'release' }
 end)

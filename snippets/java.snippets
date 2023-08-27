@@ -9,7 +9,10 @@ snippet leet
 				System.out.println(c);
 				$4 actual = new Solution().foo();
 				System.out.println("actual " + actual);
-				if (actual != c.expected) return;
+				if (actual != c.expected) {
+					System.out.println("Error");
+					return;
+				}
 			}
 		}
 	}

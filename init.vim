@@ -9,7 +9,7 @@ set softtabstop=4
 set expandtab
 set shiftwidth=4
 set autoindent
-set number
+set relativenumber
 set wildmode=longest,list
 set cc=79
 filetype plugin indent on
